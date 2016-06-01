@@ -1,6 +1,6 @@
 #IdTrabalho IdAutor Autor
 #import sys print
-nomeArquivo = input('Digite o arquivo de entrada: ')
+nomeArquivo = input('Digite o arquivo de entrada, com "/": ')
 #'entrada/AutoresComTrabalhos.csv'
 arquivo = open(nomeArquivo,'r')
 arquivoSaida = open('saida/arestas.csv','w')
