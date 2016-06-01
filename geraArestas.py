@@ -11,9 +11,9 @@ for l in texto:
         matriz.append(l.split(";"))
 print('tamanho da matriz')
 print(len(matriz)-1)
-print('TRABALHO - ORIGEM  - DESTINO')
+print('ID-SOURCE-TARGET')
 textoSaida = []
-textoSaida.append("ORIGEM  ; DESTINO"+"\n")
+textoSaida.append("SOURCE;TARGET"+"\n")
 
 
 for i in range(1 , len(matriz) -1 ):
@@ -23,8 +23,8 @@ for i in range(1 , len(matriz) -1 ):
     j = i
     while (idAtual == matriz[j][0]):
         if (autorOrigem != matriz[j][1]):
-            print(idAtual + " - " +autorOrigem + " - " + matriz[j][1])
-            textoSaida.append(autorOrigem + " ; " + matriz[j][1]+"\n")
+            print(idAtual+ "-" +autorOrigem + "-" + matriz[j][1])
+            textoSaida.append(autorOrigem + ";" + matriz[j][1]+"\n")
         j = j+1
 
 
